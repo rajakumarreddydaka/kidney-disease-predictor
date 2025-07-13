@@ -1,0 +1,133 @@
+{% block content %}
+<style>
+    .body{
+        background-image: url('static/kidney1.jpg');
+        background-position:center ;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position:relative ;
+
+    }
+</style>
+<body>
+<div class="row"  style="margin-bottom: 125px;">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+        <center><h1 style="background-color: cornflowerblue;"> KIDNEY DISEASE PREDICTOR</h1></center>
+        <div class="card card-body" style="border: 2px solid black;">
+        <div class="body">
+            <form class="form-horizontal" action="{{ url_for('predictPage') }}" method="POST" style="text-align: center;background-image: url('C:/Users/ADMIN/Downloads/kidney.jpg');"><br>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <input style="border: 2px solid black;" class="form-control" type="text" name="age" placeholder="age">
+                        </div>
+                    </div><br>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <input style="border: 2px solid black;" class="form-control" type="text" name="bp" placeholder="bp">
+                        </div>
+                    </div><br>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <input style="border: 2px solid black;" class="form-control" type="text" name="al" placeholder="al">
+                        </div>
+                    </div><br>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <input style="border: 2px solid black;" class="form-control" type="text" name="su" placeholder="su">
+                        </div>
+                    </div><br>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <input style="border: 2px solid black;" class="form-control" type="text" name="rbc" placeholder="rbc">
+                        </div>
+                    </div><br>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <input style="border: 2px solid black;" class="form-control" type="text" name="pc" placeholder="pc">
+                        </div>
+                    </div><br>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <input style="border: 2px solid black;" class="form-control" type="text" name="pcc" placeholder="pcc">
+                        </div>
+                    </div><br>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <input style="border: 2px solid black;" class="form-control" type="text" name="ba" placeholder="ba">
+                        </div>
+                    </div><br>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <input style="border: 2px solid black;" class="form-control" type="text" name="bgr" placeholder="bgr">
+                        </div>
+                    </div><br>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <input style="border: 2px solid black;" class="form-control" type="text" name="bu" placeholder="bu">
+                        </div>
+                    </div><br>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <input style="border: 2px solid black;" class="form-control" type="text" name="sc" placeholder="sc">
+                        </div>
+                    </div><br>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <input style="border: 2px solid black;" class="form-control" type="text" name="pot" placeholder="pot">
+                        </div>
+                    </div><br>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <input style="border: 2px solid black;" class="form-control" type="text" name="wc" placeholder="wc">
+                        </div>
+                    </div><br>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <input style="border: 2px solid black;" class="form-control" type="text" name="htn" placeholder="htn">
+                        </div>
+                    </div><br>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <input style="border: 2px solid black;" class="form-control" type="text" name="dm" placeholder="dm">
+                        </div>
+                    </div><br>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <input style="border: 2px solid black;" class="form-control" type="text" name="cad" placeholder="cad">
+                        </div>
+                    </div><br>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <input style="border: 2px solid black;" class="form-control" type="text" name="pe" placeholder="pe">
+                        </div>
+                    </div><br>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <input style="border: 2px solid black;" class="form-control" type="text" name="ane" placeholder="ane">
+                        </div>
+                    </div><br>
+                </div>
+                <div>
+                     <input  style="background-color: royalblue;" type="submit" class="btn btn-info btn-block" value="Predict">
+                </div>
+            </form>
+        </div>
+        </div>
+    </div>
+    <div class="col-md-2"></div>
+</div> <br>
+
+</body>
+{% endblock %}

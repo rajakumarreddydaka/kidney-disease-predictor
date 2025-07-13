@@ -1,0 +1,93 @@
+{% extends 'main.html' %}
+{% block content %}
+{% if message %}
+        <div class="alert alert-danger">{{ message }}</div>
+    {% endif %}
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Kidney Disease Prediction</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/carousel/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+    
+    <main role="main">
+
+      <section class="jumbotron p-3 p-md-5 text-white rounded bg-dark text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">Chronic Kidney Disease Prediction</h1>
+          <p class="lead">Chronic kidney disease (CKD) is one of the most
+critical health problems due to its increasing prevalence. In this
+paper, we aim to test the ability of machine learning algorithms
+for the prediction of chronic kidney disease using the smallest
+subset of features</p>
+          <p>
+            <a href="https://www.mayoclinic.org/diseases-conditions/chronic-kidney-disease/symptoms-causes/syc-20354521" class="btn btn-primary my-2">Read More about the Disease</a>
+          </p>
+        </div>
+      </section>
+
+     
+      <!-- Marketing messaging and featurettes
+      ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+
+     
+
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-12">
+            
+          </div>
+        </div>
+
+       
+
+        <!-- /END THE FEATURETTES -->
+
+      </div><!-- /.container -->
+      <section class="jumbotron p-3 p-md-5 text-white rounded bg-dark text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">Chronic Kidney Disease Prediction</h1>
+          <p class="lead">Chronic kidney disease (CKD) is one of the most
+critical health problems due to its increasing prevalence. In this
+paper, we aim to test the ability of machine learning algorithms
+for the prediction of chronic kidney disease using the smallest
+subset of features</p>
+          <p>
+            <a href="{{ url_for('kidneyPage') }}" class="btn btn-primary my-2">Check out the Project</a>
+          </p>
+        </div>
+      </section>
+
+      
+    </main>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+  </body>
+</html>
+
+{% endblock %}
