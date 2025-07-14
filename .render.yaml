@@ -3,6 +3,7 @@ services:
     name: kidney-disease-predictor
     env: python
     plan: free
+    runtime: python-3.10.12 
     buildCommand: pip install -r requirements.txt
     startCommand: gunicorn app:app
     envVars:
