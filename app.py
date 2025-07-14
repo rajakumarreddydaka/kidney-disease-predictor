@@ -20,7 +20,7 @@ mapping = {
     "ane": {"yes": 1, "no": 0},
 }
 
-@app.route("/")
+@app.route('/')
 def home():
     return render_template("home.html")
 
@@ -69,4 +69,4 @@ def predictPage():
         return render_template("home.html", message="Please enter valid input data.")
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False)
